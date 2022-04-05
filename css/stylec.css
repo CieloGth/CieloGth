@@ -1,0 +1,164 @@
+/* HEADER */
+.ch1{
+    grid-template-columns: 50% 50%;
+  }
+.nv1{
+    margin-left: 0;
+  }
+.ch1 ol{
+    margin: 0;
+    padding: 0;
+}
+.nv2 button{
+    background: transparent;
+    border: none;
+}
+.nv2{
+    justify-content: end;
+}
+.nv-m{
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-image: url(../Imagenes/nav.png);
+  position: fixed;
+  top: 13vw;
+  width: 99%;
+  padding: 20px 0;
+  border: 2px solid black;
+  /* height: calc(100% - 60px); */
+  overflow-y: auto;
+  left: 100%;
+  transition: left 0.3s;
+}
+.nv-m-i{
+  line-height: 70px;
+}
+.nv-m-l:hover,
+.nv-m-l_active {
+  background: none;
+  color: white;
+  background-color: red;
+}
+.nav-toggle {
+  display: block;
+}
+.nv-m_visible {
+  left: 0;
+}
+.nav-toggle:focus:not(:focus-visible) {
+  outline: none;
+}
+/* MAIN */
+/* Contenedor 1 */
+.cont1{
+  display: flex;
+  flex-direction: column;
+}
+.hd1{
+  height: max-content;
+  margin: 5%;
+}
+.hd1{
+  height: 50vw;
+  margin: 5%;
+}
+.hbgl1{
+  font-size: 6.5vw;
+}
+.hd2{
+  height: max-content;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+}
+.hbg2{
+  height: min-content;
+  display: grid;
+  grid-template: repeat(8,1fr)/repeat(8,1fr) ;
+}
+.hbg3{
+  margin-top: 10px;
+  height: min-content;
+  display: grid;
+  grid-template: repeat(8,1fr)/repeat(8,1fr) ;
+}
+.hbg21{
+  grid-area: 1/1/9/9;
+}
+.hbgl2{
+  grid-area: 2/1/8/5;
+  font-size: 4.3vw;
+}
+.hbg31{
+  grid-area: 1/1/9/9;
+}
+.hbgl3{
+  grid-area: 2/1/8/5;
+  font-size: 4.3vw;
+}
+/* Contenedor 2 */
+.hamb{
+  display: block;
+}
+.imb{
+  width: max-content;
+  text-align: center;
+  
+}
+.b1, .b2, .b3{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.ord{
+  height: 35px;
+}
+
+/* Contenedor 3 */
+.cont3{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.t{
+  margin: 15px;
+  margin-top: 0;
+}
+.i{
+  margin: 15px;
+}
+.cir{
+  margin-top: 80px;
+}
+/* Contenedor 4 */
+.cont4 input{
+  width: 85%;
+}
+  /* FOOTER */
+  .imf{
+    grid-area: 1/1/11/16;
+  }
+  .s1l1{
+    grid-area: 2/2/4/11;
+  }
+  .s1l2{
+    grid-area: 4/2/5/15;
+  }
+  .s1l3{
+    grid-area: 10/9/11/15;
+    text-align: end;
+  }
+  .s2l1{
+    grid-area: 6/2/7/15;
+    text-align: center;
+  }
+  .s2l2{
+    grid-area: 7/2/8/15;
+    text-align: center;
+  }
+  .s2l3{
+    grid-area: 8/2/9/15;
+    text-align: center;
+  }

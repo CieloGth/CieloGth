@@ -1,0 +1,49 @@
+/* HEADER */
+.ch1{
+    grid-template-columns: 450px 1fr 1fr;
+    grid-template-areas: "l n n";
+  }
+.nv1{
+    margin-left: 10px;
+    grid-area: l;
+  }
+
+.ch1 ol{
+    margin: 0;
+    padding: 0;
+}
+.nv2 button{
+    background: transparent;
+    border: none;
+}
+.nv2{
+    justify-content: end;
+    grid-area: n;
+    margin-right: 40px;
+}
+.nv-m{
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+}
+.nv-m-i{
+    font-size: 33px;
+    margin: 0 ;
+    line-height: 80px;
+    text-transform: none;
+  }
+  /* MAIN */
+/* Contenedor 1 */
+.hbgl1{
+    font-size: 3vw;
+  }
+  .hbgl2{
+    font-size: 1.9vw;
+  }
+  .hbgl3{
+    font-size: 1.9vw;
+  }
+  /* Contenedor 3 */
+.i{
+    margin: 25px;
+  }

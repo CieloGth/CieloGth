@@ -1,0 +1,27 @@
+/* HEADER */
+.ch1{
+  grid-template-columns: 30% 70%;
+}
+.nv1{
+  margin-left: 10px;
+}
+.ch1 ol{
+  margin: 0;
+  padding: 0;
+}
+.nv2 button{
+  background: transparent;
+  border: none;
+}
+.nv2{
+  justify-content: end;
+}
+.nv-m{
+  margin-right: 0;
+}
+.nv-m-i{
+  font-size: 23px;
+  margin: 0 ;
+  line-height: 80px;
+  text-transform: none;
+}

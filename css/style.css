@@ -1,0 +1,277 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+/* Header */
+header{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template: repeat(7,1fr)/repeat(15,1fr);
+    color: #533421;
+  }
+  .imh{
+    grid-area: 1/1/7/16;
+    position: static;
+  }
+  .ch1{
+    grid-area: 1/1/1/26;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self:baseline;
+    height: 10px;
+  }
+  .ch2{
+    grid-area: 3/2/6/8;
+    font-size: 1.9vw;
+  }
+  .ch2 h1 p{
+    font-size: 5vw;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 0.1em 0.1em #ffe9bb;
+  }
+  .nv1{
+    margin-left: 50px;
+    list-style: none;
+    align-self: center;
+  }
+  .nv2{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    align-items: center;
+  }
+  .nv-m{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  .nv-m-i{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  .nv-m-l{
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  .nv-m-l:hover,
+  .nv-m-l_active {
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+  }
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+
+  /* MAIN */
+/* Contenedor 1 */
+.cont1{
+  align-items: center;
+  justify-content: space-around;
+  font-size: 35px;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+}
+.hd1{
+  display: grid;
+  grid-template: repeat(8,1fr)/repeat(8,1fr) ;
+  height: 400px;
+  margin: 10px;
+}
+.hbg1{
+  grid-area: 1/1/9/9;
+}
+.hbgl1{
+  grid-area: 1/1/6/5;
+  padding: 5%;
+  font-size: 3.9vw;
+}
+.hd2{
+  display: grid;
+  grid-template: repeat(8,1fr)/repeat(8,1fr) ;
+  height: 400px;
+  margin: 10px;
+}
+.hbg2{
+  grid-area: 1/1/5/9;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template: repeat(3,1fr)/repeat(4,1fr) ;
+}
+.hbg21{
+  grid-area:1/1/4/5;
+}
+.hbgl2{
+  padding: 5%;
+  grid-area:1/1/4/3;
+  font-size: 2.8vw;
+}
+.hbg3{
+  grid-area: 5/1/10/9;
+  padding-top: 15px;
+  display: grid;
+  grid-template: repeat(3,1fr)/repeat(5,1fr) ;
+}
+.hbg31{
+  grid-area:1/1/4/6;
+}
+.hbgl3{
+  padding: 5%;
+  grid-area:1/1/4/3;
+  font-size: 2.8vw;
+}
+.hbgl1 p, .hbgl2 p, .hbgl3 p{
+  
+   color: white; 
+}
+/* Contenedor 2 */
+.cont2{
+  height: max-content;
+  display: block;
+  text-align: center;
+}
+.btc2 button{
+  background-color: #ffc135;
+  width: 30%;
+  height: 30px;
+  border: none;
+}
+.titulo{
+  align-self: center;
+  white-space:pre-line;
+}
+.hamb{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.imb{
+  width: 100%;
+}
+.b1, .b2, .b3{
+  width: 30%;
+  min-width: 250px;
+}
+.b1 p, .b2 p, .b3 p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.ord{
+  background-color: #df1c1c;
+  color: white;
+  border: none;
+  width: 45%;
+  height: 30px;
+}
+/* Contenedor 3 */
+.cont3{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  margin: 10%;
+  box-shadow: 5px 10px 10px grey;
+  color: #533421;
+}
+.t{
+  margin: 30px;
+}
+.i{
+  margin: 20px;
+  margin-left: 5px;
+}
+.cir{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+}
+.c{
+  background: #ffc135;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+}
+.c1{
+  background: #dddddd;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+}
+/* Contenedor 4 */
+.cont4{
+  display: grid;
+  grid-template: repeat(10,1fr)/repeat(10,1fr);
+}
+.imm{
+  grid-area: 1/1/11/11;
+}
+.cnt4{
+  border: 5px solid red;
+  display: block;
+  grid-area: 2/3/9/9;
+  font-size: 6vh;
+  text-align: center;
+}
+.cont4 button{
+  background-color: red;
+  border: none;
+  color: white;
+  width: 35%;
+  height: 40px;
+  margin: 4%;
+}
+.cont4 input{
+  width: 35%;
+  height: 40px;
+  margin: 4%;
+  padding-left: 1vh;
+}
+
+/* FOOTER */
+footer{
+  display: grid;
+  color: white;
+  grid-template: repeat(10,1fr)/repeat(15,1fr);
+  height: 500px;
+  width: 100%;
+}
+.imf{
+  grid-area: 1/1/11/16;
+}
+.s1l1{
+  grid-area: 2/2/4/6;
+}
+.s1l2{
+  grid-area: 5/2/9/7;
+  text-align: justify;
+}
+.s1l3{
+  grid-area: 10/2/11/6;
+}
+.s2l1{
+  grid-area: 5/11/6/15;
+}
+.s2l2{
+  grid-area: 6/11/7/15;
+}
+.s2l3{
+  grid-area: 10/13/15/16;
+}
+.navf{
+  display: block;
+}
