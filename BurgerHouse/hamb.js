@@ -174,12 +174,6 @@ function datos(){
     document.getElementById('f-r').innerHTML=c;
     document.getElementById('h-r').innerHTML=d;
     document.getElementById('p-r').innerHTML=e;
-    if(e%2===0){
-        alert("Par");
-    }
-    else{
-        alert("Inpar");
-    }
 }
 
 titulo();
