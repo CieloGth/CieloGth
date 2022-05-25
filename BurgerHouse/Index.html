@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Estilo lertra -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+    </style>
+
+    <!-- Estilo lertra -->
+    <script src="https://kit.fontawesome.com/b57319cb40.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="d-flex align-items-center">
+        <div class="card bg-dark text-white">
+            <img src="./Imagenes/header.jpg" class="card-img" id="mi_imagen" alt="..." width="100%" height="100%">
+            <div class="card-img-overlay position-absolute top-50 start-0 translate-middle-y">
+                <h6 class="card-text text-uppercase">It is a good time for great taste of burgers</h6>
+                <h1 class="card-title text-uppercase">Burger</h1>
+                <h2 class="card-subtitle text-uppercase">Week</h2>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light mt-3 fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand p-0" href="#"><img class="im-l" src="./Imagenes/logo-burguer.png" alt=""></a>
+              <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#menu" 
+                aria-controls="menu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="menu" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Burger House</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item m-2">
+                        <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item m-2">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="#">Our story</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a class="nav-link" href="#"><img src="./Imagenes/icono-moto.png"></a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!-- <section class="container">
+            <p>Es un buen momento para el gran sabor de las hamburguesas</p>
+            <h1>SEMANA DE LA HAMBURGESA</h1>
+        </section> -->
+    </header>
+    <main>
+        <section class="container mb-5 c2">
+            <div class="row">
+                <div class="col-sm-12 p-3 col-md-6">
+                    <div class="card bg-dark text-white">
+                        <img src="./Imagenes/burger-image1.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay caj1">
+                            <h6 class="card-subtitle">try it today</h6>
+                            <h2 class="card-title">Most popular burger</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 p-3 col-md-6">
+                    <div class="row">
+                        <div class="col pb-3">
+                            <div class="card bg-dark text-white">
+                                <img src="./Imagenes/burger-image2.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay caj2">
+                                    <h6 class="card-subtitle">try it today</h6>
+                                    <h2 class="card-title">More fun more taste</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col pt-3">
+                            <div class="card bg-dark text-white">
+                                <img src="./Imagenes/burger-image2.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay caj3">
+                                    <h6 class="card-subtitle">try it today</h6>
+                                    <h2 class="card-title">fresh & chilli</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="d-grid gap-2 col-12">
+                        <button class="btn btn-lg btn-outline-warning" type="button">always tasty burger</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mb-5 c3">
+            <h1 class="text-uppercase">Choose & enojoy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut atque molestiae, exercitationem nulla dicta reiciendis quibusdam ipsa repellendus esse nisi perferendis provident ipsam explicabo eum modi maxime nihil rerum!</p>
+            <div class="container">
+                <div class="row" style="justify-content: center;">
+                    <div class="col-sm-12 
+                     col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./Imagenes/burguer1.png" alt="a">
+                            <div class="card-body">
+                                <h2 class="card-title text-uppercase">Lorem, ipsum dolor.</h2>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere!</p>
+                                <button 
+                                    class="btn btn-outline-danger text-uppercase fw-bold"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#mi-modal-1"
+                                >
+                                    Order Now
+                                </button>
+                                <div
+                                    class="modal fade"
+                                    id="mi-modal-1"
+                                    tabindex="-1"
+                                    aria-hidden="true"
+                                    aria-labelledby="label-modal-1"
+                                >
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="nombre-h-1"></h5>
+                                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <img class="card-img-top" src="./Imagenes/burguer1.png" alt="a">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="card-body" style="text-align: left;">
+                                                            <p id="tipo-h-1"></p>
+                                                            <p id="desc-h-1"></p>
+                                                            <hr>
+                                                            <p> Ingredientes: <a id="in-h-1"></a></p>
+                                                        </div>
+                                                        <div><p> Precio: <a id="pre-h-1"></a></p></div>
+                                                    </div>
+
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-primary">Ordenar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 
+                     col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./Imagenes/burguer2.png" alt="a">
+                            <div class="card-body">
+                                <h2 class="card-title text-uppercase">Lorem, ipsum dolor.</h2>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere!</p>
+                                <button 
+                                    class="btn btn-outline-danger text-uppercase fw-bold"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#mi-modal-2"
+                                >
+                                    Order Now 
+                                </button>
+                                <div
+                                    class="modal fade"
+                                    id="mi-modal-2"
+                                    tabindex="-1"
+                                    aria-hidden="true"
+                                    aria-labelledby="label-modal-2"
+                                >
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="nombre-h-2"></h5>
+                                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <img class="card-img-top" src="./Imagenes/burguer2.png" alt="a">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="card-body" style="text-align: left;">
+                                                            <p id="tipo-h-2"></p>
+                                                            <p id="desc-h-2"></p>
+                                                            <hr>
+                                                            <p> Ingredientes: <a id="in-h-2"></a></p>
+                                                        </div>
+                                                        <div><p> Precio: <a id="pre-h-2"></a></p></div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-primary">Ordenar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 
+                     col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./Imagenes/burguer1.png" alt="a">
+                            <div class="card-body">
+                                <h2 class="card-title text-uppercase">Lorem, ipsum dolor.</h2>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere!</p>
+                                <button 
+                                    class="btn btn-outline-danger text-uppercase fw-bold"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#mi-modal-3"
+                                >
+                                    Order Now 
+                                </button>
+                                <div
+                                    class="modal fade"
+                                    id="mi-modal-3"
+                                    tabindex="-1"
+                                    aria-hidden="true"
+                                    aria-labelledby="label-modal-3"
+                                >
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="nombre-h-3"></h5>
+                                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <img class="card-img-top" src="./Imagenes/burguer1.png" alt="a">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="card-body" style="text-align: left;">
+                                                            <p id="tipo-h-3"></p>
+                                                            <p id="desc-h-3"></p>
+                                                            <hr>
+                                                            <p> Ingredientes: <a id="in-h-3"></a></p>
+                                                        </div>
+                                                        <div><p> Precio: <a id="pre-h-3"></a></p></div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-primary">Ordenar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container c4">
+            <div class="carousel slide carousel-dark carousel-fade" id="mc" data-bs-ride="carousel" style="background: beige;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="500">
+                        <div class="card mb-3" >
+                            <div class="row g-0">
+                              <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3 class="card-subtitle">Discover 1</h3>
+                                    <h1 class="card-title text-uppercase">Opcoming events</h1>
+                                    <p class="card-text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae laudantium a nesciunt, minima autem distinctio impedit ipsum eligendi dignissimos.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="carousel-indicators">
+                                        <button 
+                                            type="button" 
+                                            class="active" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="0"
+                                            aria-label="Slide 1">
+                                        </button>
+                                        <button 
+                                            type="button" 
+                                            class="" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="1"
+                                            aria-label="Slide 2">
+                                        </button>
+                                        <button 
+                                            type="button" 
+                                            class="" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="2"
+                                            aria-label="Slide 3">
+                                        </button>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <img class="img-fluid rounded-start p-4" src="./Imagenes/burger-image4.jpg" alt="a">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3" >
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img class="img-fluid rounded-start p-4" src="./Imagenes/burger-image4.jpg" alt="a">
+                                </div>
+                                <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3 class="card-subtitle">Discover2 </h3>
+                                    <h1 class="card-title text-uppercase">Opcoming events</h1>
+                                    <p class="card-text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae laudantium a nesciunt, minima autem distinctio impedit ipsum eligendi dignissimos.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="carousel-indicators">
+                                        <button 
+                                            type="button" 
+                                            class="" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="0"
+                                            aria-label="Slide 1">
+                                        </button>
+                                        <button 
+                                            type="button" 
+                                            class="active" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="1"
+                                            aria-label="Slide 2">
+                                        </button>
+                                        <button 
+                                            type="button" 
+                                            class="" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="2"
+                                            aria-label="Slide 3">
+                                        </button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3" >
+                            <div class="row g-0">
+                              <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3 class="card-subtitle">Discover</h3>
+                                    <h1 class="card-title text-uppercase">Opcoming events</h1>
+                                    <p class="card-text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae laudantium a nesciunt, minima autem distinctio impedit ipsum eligendi dignissimos.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="carousel-indicators">
+                                        <button 
+                                            type="button" 
+                                            class="" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="0"
+                                            aria-label="Slide 1">
+                                        </button>
+                                        <button 
+                                            type="button" 
+                                            class="" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="1"
+                                            aria-label="Slide 2">
+                                        </button>
+                                        <button 
+                                            type="button" 
+                                            class="active" 
+                                            data-bs-target="#mc"
+                                            data-bs-slide-to="2"
+                                            aria-label="Slide 3">
+                                        </button>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <img class="img-fluid rounded-start p-4" src="./Imagenes/burger-image4.jpg" alt="a">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <section class="c5">
+            <section class="container mt-5 mb-5 t-5 position-relative">
+                <div class="row mt-5">
+                    <div class="col-12 mb-2 mt-5">
+                        <h2>reservation</h2>
+                        <h1 class="text-uppercase">book your table</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="container m-sm-1 m-md-3 p-3">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 p-2">
+                                    <input type="text" class="form-control form-control-lg mb-3 dato-input" placeholder="Name" id="name">
+                                </div>
+                                <div class="col-sm-12 col-md-6 p-2">
+                                    <input type="email" class="form-control form-control-lg mb-3 dato-input" placeholder="email" id="email" multiple>
+                                    <div id="ayuda-correo" class="form-text">Te enviaremos un mensaje de confirmacion</div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 p-2">
+                                    <input type="date" class="form-control form-control-lg mb-3 dato-input" placeholder="date" id="date">
+                                </div>
+                                <div class="col-sm-12 col-md-6 p-2">
+                                    <input type="time" class="form-control form-control-lg mb-3 dato-input" placeholder="time" id="time">
+                                </div>
+                                <div class="col-sm-12 col-md-6 p-2">
+                                    <input type="number" class="form-control form-control-lg mb-3 dato-input" placeholder="people" id="personas" min="1" max="70" >
+                                </div>
+                                <div class="col-sm-12 col-md-6 p-2">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button 
+                                            class="btn btn-outline-danger text-uppercase"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#mi-orden"
+                                            onclick="find_table()"
+                                        >
+                                            find a table
+                                        </button>
+                                        <div
+                                            class="modal fade"
+                                            id="mi-orden"
+                                            tabindex="-1"
+                                            aria-hidden="true"
+                                            aria-labelledby="label-modal-1"
+                                        >
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Cite for your table</h5>
+                                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-4">
+                                                                    <img class="card-img-top" src="./Imagenes/image.png" alt="a">
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <div class="card-body" style="text-align: left;">
+                                                                        <p>Reservacion a nombre de: 
+                                                                            <p><a id="n-r"></a></p>
+                                                                        </p>
+                                                                        <hr>
+                                                                        <p>
+                                                                            <p> Fecha:<a id="f-r"></a></p>
+                                                                            <p> Hora:<a id="h-r"></a></p>
+                                                                            <p> Cantidad de personas: <a id="p-r"></a></p>
+                                                                        </p> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-primary">Ordenar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="d-flex align-items-center">
+        <div class="card bg-dark text-white">
+            <img src="./Imagenes/footer.jpg" class="card-img" id="mi_footer" alt="..." width="100%" height="100%">
+            <div class="card-img-overlay position-absolute top-0 start-0">
+                <div class="row mb-sm-2 mb-md-4 mb-lg-5">
+                    <div class="col-6 col-md-5 col-lg-4">
+                        <img src="./Imagenes/logo-burguer-footer.png" class="mi-logo" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="row mb-sm-2 mb-md-6 mb-lg-5 mt-sm-2 mt-md-4 mt-lg-5 r2">
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <p class="text-break">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde fugiat natus vero id repudiandae voluptate magni ullam reiciendis sequi accusamus possimus explicabo at, molestias inventore! Soluta deleniti tenetur odit?</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-6 col-lg-12">
+                                <p>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a class="text-break" href="">Main road, bulding name, country</a>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-12">
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <a class="text-break" href="">info@companyname.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-sm-2 mt-md-4 mt-lg-5">
+                    <div class="col-6">
+                        <i class="fa-light fa-c"></i>
+                        <a >Company name 2020. all rights reserved</a>
+                    </div>
+                    <div class="col-6 ic">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Estilo js  -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>

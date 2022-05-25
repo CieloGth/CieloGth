@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+    <img id="mi_imagen" src="./Imagenes/header.jpg" >
+
+    <hr>
+    <div class="col-sm-12 col-md-6 p-2">
+        <input type="text" class="form-control form-control-lg mb-3 dato-input" placeholder="Name" id="name">
+    </div>
+    <div class="col-sm-12 col-md-6 p-2">
+        <input type="email" class="form-control form-control-lg mb-3 dato-input" placeholder="email" id="email" multiple>
+        <div id="ayuda-correo" class="form-text">Te enviaremos un mensaje de confirmacion</div>
+    </div>
+    <div class="col-sm-12 col-md-6 p-2">
+        <input type="date" class="form-control form-control-lg mb-3 dato-input" placeholder="date" id="date">
+    </div>
+    <div class="col-sm-12 col-md-6 p-2">
+        <input type="time" class="form-control form-control-lg mb-3 dato-input" placeholder="time" id="time">
+    </div>
+    <div class="col-sm-12 col-md-6 p-2">
+        <input type="number" class="form-control form-control-lg mb-3 dato-input" placeholder="people" id="personas" min="1" max="70" >
+    </div>
+    <div class="col-sm-12 col-md-6 p-2">
+        <div class="d-grid gap-2 col-12">
+            <button class="btn btn-lg btn-outline-danger text-uppercase" type="submit" id="btnfind" onclick="find_table()">
+                find a table
+            </button>
+        </div>
+    </div>
+    <hr>
+    <ul id="mensaje"></ul>
+    <button 
+        class="btn btn-outline-danger text-uppercase fw-bold"
+        data-bs-toggle="modal"
+        data-bs-target="#mi-orden"
+        onclick="find_table()"
+    >
+        Order Now
+    </button>
+    <div
+        class="modal fade"
+        id="mi-orden"
+        tabindex="-1"
+        aria-hidden="true"
+        aria-labelledby="label-modal-1"
+    >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cite for your table</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                        <div class="col-4">
+                            <img class="card-img-top" src="./Imagenes/image.png" alt="a">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body" style="text-align: left;">
+                                <p>Reservacion a nombre de: 
+                                    <p><a id="n-r"></a></p>
+                                </p>
+                                <hr>
+                                <p>
+                                    <p> Fecha:<a id="f-r"></a></p>
+                                    <p> Hora:<a id="h-r"></a></p>
+                                    <p> Cantidad de personas: <a id="p-r"></a></p>
+                                </p> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Ordenar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+       <script >
+           
+            function validar(){
+                if ($('#name').val() == "") {
+                    alert('Vacio name');
+                    return false;
+                }else{ }
+                if ($('#email').val() == "") {
+                    alert('Vacio email');
+                    return false;
+                }else{ 
+                    if($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
+                    alert('El correo electrónico introducido no es correcto.');
+                    return false;
+                    }
+                }
+                if ($('#date').val() == "") {
+                    alert('Vacio date');
+                    return false;
+                }else{
+                }
+                if ($('#time').val() == "") {
+                    alert('Vacio time');
+                    return false;
+                }else{
+                }
+                if ($('#personas').val() == "") {
+                    alert('Vacio personas');
+                    return false;
+                }else{
+                }
+            };
+            let p;
+            const table = new Array();
+            function find_table(){
+                validar();
+                let inputv  = document.getElementsByClassName('dato-input');
+                namev =[].map.call(inputv, function(dataInput){
+                    table.push(dataInput.value);
+                    dataInput.value="";
+                });
+                datos();
+            }
+            function datos(){
+                let a = table[0];
+                let c = table[2];
+                let d = table[3];
+                let e = table[4];
+                document.getElementById('n-r').innerHTML=a;
+                document.getElementById('f-r').innerHTML=c;
+                document.getElementById('h-r').innerHTML=d;
+                document.getElementById('p-r').innerHTML=e;
+                if(e%2===0){
+                    alert("Par");
+                }
+                else{
+                    alert("Inpar");
+                }
+            }
+        
+            // if($(window).width()<=760){
+            //     $('#mi_imagen').attr("scr", "./Imagenes/header-a.png");
+            //     $('#mi_imagen2').attr("scr", "./Imagenes/header.jpg");
+            // }
+
+        //     if (window.matchMedia('(max-width: 768px)').matches)
+        // {
+        //     $('#mi_imagen').attr("scr", "./Imagenes/header-a.png");
+        //     $('#mi_imagen2').attr("scr", "./Imagenes/header.jpg");
+
+        // }
+
+
+       </script>
+</body>
+</html>

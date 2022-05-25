@@ -1,0 +1,253 @@
+/* *{
+    
+}*/
+
+header .bg-light {
+    background-color: transparent !important;
+}
+header .navbar{
+    font-size: 1.2rem;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: #f79c64;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #43210c;
+}
+header .card{
+    width: 100%;
+}
+header .card-img-overlay {
+    width: 50%;
+    height: max-content;
+}
+header .card-title{
+    font-size: 7rem;
+    font-family: 'Alfa Slab One', cursive;
+    color: #43210c;
+    text-shadow: 0.05em 0.05em #ffe9bb;
+    
+}
+header .card-subtitle{
+    font-size: 5rem;
+    font-family: 'Alfa Slab One', cursive;
+    color: #43210c;
+    text-shadow: 0.05em 0.05em #ffe9bb;
+}
+header .card-text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    color: #43210c;
+}
+.im-l{
+    height: 7rem;
+}
+.offcanvas.show {
+    background-image: url("./Imagenes/nav.png");
+}
+.offcanvas {
+    background-color: #faf6f300;
+}
+/* contenedor 2 */
+.c2{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.caj1{
+    width: 55%;
+}
+.caj2, .caj3{
+    width: 50%;
+}
+.btn-outline-warning{
+    background-color: #ffc107;
+    color: #43210c;
+}
+.btn-outline-warning:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* contenedor 3 */
+.c3{
+    color: #43210c;
+    text-align: center;
+}
+.c3 h1{
+    font-family: 'Alfa Slab One', cursive;
+}
+.c3 .card{
+    border: none;
+}
+.c3 .card-title{
+    font-family: 'Bebas Neue', cursive;
+}
+.btn-outline-danger{
+    background-color: #df1c1c ;
+    color: aliceblue;
+}
+
+
+/* contenedor 4 */
+.c4{
+    color: #43210c;
+}
+.c4 .card{
+    box-shadow: 5px 10px 10px grey;
+}
+.c4 .card-title{
+    font-family: 'Alfa Slab One', cursive;
+}
+.c4 .card-subtitle{
+    font-family: 'Bebas Neue', cursive;
+    color: #4b4b4b;
+}
+.c4 .card-body {
+    padding: 3rem 2rem;
+}
+.c4 .card-footer {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carousel-indicators {
+    position: relative;
+    margin-top: 4vw;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #ffc135;
+}
+.carousel-indicators .active [data-bs-target] {
+    opacity: 1;
+}
+
+
+
+
+
+/* .c4 .card-footer {
+    padding:2rem;
+    background-color: white;
+    border-top: none;
+    color: #dddddd;
+}
+.c4 .card-footer .ac {
+    color: #ffc135;
+} */
+
+/* contenedor 5  */
+
+.c5{
+    background: url("./Imagenes/back-contact.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.c5 h1, .c5 h2{
+    color: #43210c;
+}
+.c5 .text-uppercase{
+    font-family: 'Alfa Slab One', cursive;
+}
+.c5 .container{
+    height: inherit;
+}
+
+/* footer */
+footer{
+    color: white;
+}
+footer .card{
+    width: 100%;
+}
+.mi-logo{
+    height: 7rem;
+}
+footer .card-img-overlay {
+    height: 100%;
+    padding: 5%;
+    padding-top: 2%;
+}
+.r2{
+    justify-content: space-between;
+}
+
+
+@media (max-width: 1200px) {
+    header .card-title{
+        font-size: 5rem;
+        
+    }
+    header .card-subtitle{
+        font-size: 3rem;
+    }
+    header .card-text{
+        font-size: 2.3rem;
+    }
+    .im-l{
+        height: 3rem;
+    }
+    .mi-logo{
+        width: 15rem;
+        height: 5rem;
+    }
+} 
+ @media (max-width: 900px) {
+    header .card-title{
+        font-size: 4rem;
+        
+    }
+    header .card-subtitle{
+        font-size: 3rem;
+    }
+    header .card-text{
+        font-size: 1.3rem;
+    }
+    footer .card-img-overlay {
+        height: max-content;
+    }
+    
+} 
+@media (max-width: 660px) {
+    header .card-img-overlay {
+        width: 55%;
+    }
+    header .card-title{
+        font-size: 2.2rem;
+        
+    }
+    header .card-subtitle{
+        font-size: 1.8rem;
+    }
+    header .card-text{
+        font-size: .7rem;
+    }
+    .mt-3 {
+        margin-top: .3rem !important;
+    }
+    .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+        align-items: flex-start;
+        height: 4rem;
+    }
+    .im-l{
+        height: 3rem;
+    }
+    .mi-logo{
+        width: 10rem;
+        height: 2rem;
+    }
+    footer{
+        font-size: 2.5vw;
+    }
+    footer p {
+        margin-bottom: 0.5rem;
+    }
+} 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Estilo lertra -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+    </style>
+    
+
+    <!-- Estilo js  -->
+    
+    
+
+    <!-- Estilo lertra -->
+    <script src="https://kit.fontawesome.com/b57319cb40.js" crossorigin="anonymous"></script>
+
+</head>
+<body>  
+    <section class="container mb-5 c3">
+        <div class="row mt-5">
+            <div class="col">
+                <button 
+                    class="btn btn-info btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#mi-modal-1"
+                >
+                    Abrir Modal 1
+                </button>
+                <!-- pantalla negra -->
+                <div
+                    class="modal fade"
+                    id="mi-modal-1"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    aria-labelledby="label-modal-1"
+                >
+                    <!-- caja dialogo -->
+                    <div class="modal-dialog">
+                        <!-- caja contenido -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Titulo del modal 1</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Hola Mundo</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Acepto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <button 
+                    class="btn btn-success btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#mi-modal-2"
+                >
+                    Abrir Modal 2
+                </button>
+                <!-- pantalla negra -->
+                <div
+                    class="modal fade"
+                    id="mi-modal-2"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    aria-labelledby="label-modal-2"
+                >
+                    <!-- caja dialogo -->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <!-- caja contenido -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="nombre-h-1"></h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="ham1-n"></p>
+                                <div class="container-fluid">
+                                  <div class="row">
+                                    <div class="col-6">
+                                        <img class="card-img-top" src="./Imagenes/burguer2.png" alt="a">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <p id="tipo-h-1"></p>
+                                            <p id="desc-h-1"></p>
+                                            <hr>
+                                            <p> Ingredientes: <a id="in-h-1"></a></p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Ordenar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <button 
+                    class="btn btn-warning btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#mi-modal-3"
+                >
+                    Abrir Modal 3
+                </button>
+                <!-- pantalla negra -->
+                <div
+                    class="modal fade"
+                    id="mi-modal-3"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    aria-labelledby="label-modal-3"
+                >
+                    <!-- caja dialogo -->
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <!-- caja contenido -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Titulo del modal 3</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div style="height: 1000px;">
+                                    <h2>Hola Mundo</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis facilis culpa enim obcaecati! Ea officiis similique ullam omnis nam rerum natus! Perferendis beatae fugit minus saepe repellendus, ullam officiis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ab unde quidem qui repudiandae at, nesciunt eum voluptatibus libero iure quasi quas nulla assumenda, perferendis omnis veniam dolorum hic laboriosam.</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Acepto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
