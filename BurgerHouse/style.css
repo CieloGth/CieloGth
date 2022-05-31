@@ -86,6 +86,10 @@ header .card-text{
     background-color: #df1c1c ;
     color: aliceblue;
 }
+.c3 button a{
+    color: white;
+    text-decoration: none
+}
 
 
 /* contenedor 4 */
@@ -159,6 +163,10 @@ header .card-text{
 }
 .c5 .container{
     height: inherit;
+}
+.c5 button a{
+    color: white;
+    text-decoration: none
 }
 
 /* footer */

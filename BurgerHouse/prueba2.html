@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Estilos css -->
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./style-pedidos.css">
+    
+        <!-- Estilo lertra -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+        </style>
+        
+    
+        <!-- Estilo js  -->
+        
+        <script src="./js/bootstrap.min.js"></script>
+        
+    
+        <!-- Estilo lertra -->
+        <script src="https://kit.fontawesome.com/b57319cb40.js" crossorigin="anonymous"></script>        
+    </head>
+
+<body>
+    <section class="c5">
+        <section class="container mt-5 mb-5 t-5 position-relative">
+            <div class="row mt-5">
+                <div class="col-12 mb-2 mt-5">
+                    <h2>reservation</h2>
+                    <h1 class="text-uppercase">book your table</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <div class="container m-sm-1 m-md-3 p-3">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 p-2">
+                                <input type="text" class="form-control form-control-lg mb-3 dato-input" placeholder="Name" id="name" required>
+                            </div>
+                            <div class="col-sm-12 col-md-6 p-2">
+                                <input type="email" class="form-control form-control-lg mb-3 dato-input" placeholder="email" id="email" multiple required>
+                                <div id="ayuda-correo" class="form-text">Te enviaremos un mensaje de confirmacion</div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 p-2">
+                                <input type="date" class="form-control form-control-lg mb-3 dato-input" placeholder="date" id="date" required>
+                            </div>
+                            <div class="col-sm-12 col-md-6 p-2">
+                                <input type="time" class="form-control form-control-lg mb-3 dato-input" placeholder="time" id="time" required>
+                            </div>
+                            <div class="col-sm-12 col-md-6 p-2">
+                                <input type="number" class="form-control form-control-lg mb-3 dato-input" placeholder="people" id="personas" min="1" max="70"required >
+                            </div>
+                            <div class="col-sm-12 col-md-6 p-2">
+                                <div class="d-grid gap-2 col-12">
+                                    <button 
+                                        class="btn btn-outline-danger text-uppercase"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#mi-orden"
+                                        onclick="find_table()"
+                                    >
+                                        find a table
+                                    </button>
+                                    <div
+                                        class="modal fade"
+                                        id="mi-orden"
+                                        tabindex="-1"
+                                        aria-hidden="true"
+                                        aria-labelledby="label-modal-1"
+                                    >
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Cite for your table</h5>
+                                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <img class="card-img-top" src="./Imagenes/image.png" alt="a">
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body" style="text-align: left;">
+                                                                    <p>Reservacion a nombre de: 
+                                                                        <p><a id="n-r"></a></p>
+                                                                    </p>
+                                                                    <hr>
+                                                                    <p>
+                                                                        <p> Fecha:<a id="f-r"></a></p>
+                                                                        <p> Hora:<a id="h-r"></a></p>
+                                                                        <p> Cantidad de personas: <a id="p-r"></a></p>
+                                                                    </p> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary"><a href="./Reservacion.html">Ordenar</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+<script>
+    function validar(){
+  if ($('#name').val() == "") {
+      alert('Vacio name');
+      return false;
+  }else{ }
+  if ($('#email').val() == "") {
+      alert('Vacio email');
+      return false;
+  }else{ 
+      if($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
+      alert('El correo electrónico introducido no es correcto.');
+      return false;
+      }
+  }
+  if ($('#date').val() == "") {
+      alert('Vacio date');
+      return false;
+  }else{
+  }
+  if ($('#time').val() == "") {
+      alert('Vacio time');
+      return false;
+  }else{
+  }
+  if ($('#personas').val() == "") {
+      alert('Vacio personas');
+      return false;
+  }else{
+  }
+};
+
+
+let table = []
+let indice=0;
+function find_table(){
+    // validar();
+    let objeto={}
+
+    let nom=document.getElementById("name").innerHTML;
+    let cor=document.getElementById("email").innerHTML;
+    let fec = document.getElementById("date").innerHTML;
+    let hor=document.getElementById("time").innerHTML;
+    let per=document.getElementById("personas").innerHTML;
+    
+    objeto.nombre=nom;
+    objeto.correo=cor;
+    objeto.fecha=fec;
+    objeto.hora= hor;
+    objeto.personas= per;
+    // table.push(objeto);
+
+//   datos();
+//   indice+=1;
+}
+// function datos(){
+
+//   let a = table[indice].nombre;
+//   let c = table[indice].correo;
+//   let d = table[indice].fecha;
+//   let e = table[indice].hora;
+//   let f = table[indice].personas;
+//   document.getElementById('n-r').innerHTML=a;
+//   document.getElementById('f-r').innerHTML=c;
+//   document.getElementById('h-r').innerHTML=d;
+//   document.getElementById('p-r').innerHTML=e;
+
+// //   borrardatos();
+// }
+// function borrardatos(){
+//     document.getElementById("name").value="";
+//     document.getElementById("email").value="";
+//     document.getElementById("date").value="";
+//     document.getElementById("time").value="";
+//     document.getElementById("personas").value="";
+// }
+  </script>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      
+</body>
+</html>

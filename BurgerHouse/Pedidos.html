@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style-pedidos.css">
+
+    <!-- Estilo lertra -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+    </style>
+    
+
+    <!-- Estilo js  -->
+    
+    <script src="./js/bootstrap.min.js"></script>
+    
+
+    <!-- Estilo lertra -->
+    <script src="https://kit.fontawesome.com/b57319cb40.js" crossorigin="anonymous"></script>
+
+</head>
+<body>  
+    <main class="m-5 p-5">
+        <div class="pe">
+            <h1>Pedidos</h1>
+            <hr>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Ingredientes</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total</td>
+                            <td id="total-pre">$</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Agregar su direccion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="nombreenvio" class="col-form-label">Nombre quien recibe:</label>
+                            <input type="text" class="form-control" id="nombreenvio">
+                          </div>
+                          <div class="mb-3">
+                            <label for="telefono" class="col-form-label">Telefono:</label>
+                            <input type="number" class="form-control" id="telefono">
+                          </div>
+                          <div class="mb-3">
+                            <label for="direccion" class="col-form-label">Direccion:</label>
+                            <textarea class="form-control" id="direccion"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="tipopago" class="col-form-label">Tipo de pago:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                Pago en efectivo
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                Pago en tarjeta
+                                </label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" onclick="move()">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalToggleLabel2"></h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="progress">
+                            <div id="myBar" class="" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                          </div>
+                          <br>
+                          <h5 id="proceso"></h5>
+                      <button type="button" class="btn btn-light" id="btn" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Ordenar</a>
+        </div>
+    </main>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./hamb.js"></script>
+    <script src="./pedido.js"></script>
+</body>
+</html>

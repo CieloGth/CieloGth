@@ -60,7 +60,7 @@
                             <a class="nav-link" href="#">Contact us</a>
                         </li>
                         <li class="nav-item m-1">
-                            <a class="nav-link" href="#"><img src="./Imagenes/icono-moto.png"></a>
+                            <a class="nav-link" href="./Pedidos.html"><img src="./Imagenes/icono-moto.png"></a>
                         </li>
                     </ul>
                 </div>
@@ -133,6 +133,7 @@
                                     class="btn btn-outline-danger text-uppercase fw-bold"
                                     data-bs-toggle="modal"
                                     data-bs-target="#mi-modal-1"
+                                    onclick="buscar(1)"
                                 >
                                     Order Now
                                 </button>
@@ -162,7 +163,7 @@
                                                             <hr>
                                                             <p> Ingredientes: <a id="in-h-1"></a></p>
                                                         </div>
-                                                        <div><p> Precio: <a id="pre-h-1"></a></p></div>
+                                                        <div><p> Precio: $ <a id="pre-h-1"></a></p></div>
                                                     </div>
 
                                                 </div>
@@ -170,7 +171,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-primary">Ordenar</button>
+                                                <button type="button" class="btn btn-primary"><a href="./menu.html">Ver menu</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -189,6 +190,7 @@
                                     class="btn btn-outline-danger text-uppercase fw-bold"
                                     data-bs-toggle="modal"
                                     data-bs-target="#mi-modal-2"
+                                    onclick="buscar(2)"
                                 >
                                     Order Now 
                                 </button>
@@ -218,14 +220,14 @@
                                                             <hr>
                                                             <p> Ingredientes: <a id="in-h-2"></a></p>
                                                         </div>
-                                                        <div><p> Precio: <a id="pre-h-2"></a></p></div>
+                                                        <div><p> Precio: $ <a id="pre-h-2"></a></p></div>
                                                     </div>
                                                 </div>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-primary">Ordenar</button>
+                                                <button type="button" class="btn btn-primary"><a href="./menu.html">Ver menu</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -244,6 +246,7 @@
                                     class="btn btn-outline-danger text-uppercase fw-bold"
                                     data-bs-toggle="modal"
                                     data-bs-target="#mi-modal-3"
+                                    onclick="buscar(3)"
                                 >
                                     Order Now 
                                 </button>
@@ -273,14 +276,14 @@
                                                             <hr>
                                                             <p> Ingredientes: <a id="in-h-3"></a></p>
                                                         </div>
-                                                        <div><p> Precio: <a id="pre-h-3"></a></p></div>
+                                                        <div><p> Precio: $ <a id="pre-h-3"></a></p></div>
                                                     </div>
                                                 </div>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-primary">Ordenar</button>
+                                                <button type="button" class="btn btn-primary"><a href="./menu.html">Ver menu</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -439,20 +442,20 @@
                         <div class="container m-sm-1 m-md-3 p-3">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6 p-2">
-                                    <input type="text" class="form-control form-control-lg mb-3 dato-input" placeholder="Name" id="name">
+                                    <input type="text" class="form-control form-control-lg mb-3 dato-input" placeholder="Name" id="name" required>
                                 </div>
                                 <div class="col-sm-12 col-md-6 p-2">
-                                    <input type="email" class="form-control form-control-lg mb-3 dato-input" placeholder="email" id="email" multiple>
+                                    <input type="email" class="form-control form-control-lg mb-3 dato-input" placeholder="email" id="email" multiple required>
                                     <div id="ayuda-correo" class="form-text">Te enviaremos un mensaje de confirmacion</div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 p-2">
-                                    <input type="date" class="form-control form-control-lg mb-3 dato-input" placeholder="date" id="date">
+                                    <input type="date" class="form-control form-control-lg mb-3 dato-input" placeholder="date" id="date" required>
                                 </div>
                                 <div class="col-sm-12 col-md-6 p-2">
-                                    <input type="time" class="form-control form-control-lg mb-3 dato-input" placeholder="time" id="time">
+                                    <input type="time" class="form-control form-control-lg mb-3 dato-input" placeholder="time" id="time" required>
                                 </div>
                                 <div class="col-sm-12 col-md-6 p-2">
-                                    <input type="number" class="form-control form-control-lg mb-3 dato-input" placeholder="people" id="personas" min="1" max="70" >
+                                    <input type="number" class="form-control form-control-lg mb-3 dato-input" placeholder="people" id="personas" min="1" max="70"required >
                                 </div>
                                 <div class="col-sm-12 col-md-6 p-2">
                                     <div class="d-grid gap-2 col-12">
@@ -501,7 +504,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                                                        <button type="button" class="btn btn-primary">Ordenar</button>
+                                                        <button type="button" class="btn btn-primary"><a href="./Reservacion.html">Ordenar</a></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -566,6 +569,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./hamb.js"></script>
+    <script src="./index.js"></script>
 
 </body>
 </html>

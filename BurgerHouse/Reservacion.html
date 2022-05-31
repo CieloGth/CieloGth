@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Estilo lertra -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+    </style>
+    
+
+    <!-- Estilo js  -->
+    
+    <script src="./js/bootstrap.min.js"></script>
+    
+
+    <!-- Estilo lertra -->
+    <script src="https://kit.fontawesome.com/b57319cb40.js" crossorigin="anonymous"></script>
+
+</head>
+<body>  
+    <main>
+        <div>Reservaciones
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <!-- <th>Descripcion</th> -->
+                            <th>Ingredientes</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total</td>
+                            <td id="total-pre">$</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div>Pedidos</div>
+        <hr>
+        <div id="container ">
+            <form action="#">
+                <label for="anadir">Mi lista de la compra:</label>
+                <input type="text" name="anadir" id="anadir">
+                <input type="button" value="Añadir a la lista">
+            </form>    
+        
+            <ul id="listaCompra"></ul>
+        
+            <p>Nota: Puedes eliminar elementos de la lista haciendo doble click sobre ellos</p>
+        </div>
+    </main>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./hamb.js"></script>
+    <script>
+//     {
+//         nombre:"Hamburgesa 1", 
+//         tipo:"Clasica",
+//         desc:"Hamburgesa de carne de res incluye papas chicas y refresco chico",
+//         ingre:[
+//             ArrayIngredientes[0],ArrayIngredientes[10],
+//             ArrayIngredientes[11],ArrayIngredientes[12],
+//             ArrayIngredientes[13],ArrayIngredientes[14],
+//             ArrayIngredientes[15]],
+//         precio: 55
+//     },{
+//         nombre:"Hamburgesa 2", 
+//         tipo:"De pollo",
+//         desc:"Hamburgesa de carne de pollo incluye papas chicas y refresco chico",
+//         ingre:[
+//             ArrayIngredientes[1],ArrayIngredientes[10],
+//             ArrayIngredientes[11],ArrayIngredientes[12],
+//             ArrayIngredientes[13],ArrayIngredientes[14],
+//             ArrayIngredientes[15]],
+//         precio: 55
+//     }]
+//         var d;
+
+//         // $("#btnCagar").click(function () {
+//         // for (var i = 0; i < Burger.length; i++) {
+//         //     indice = i+1;
+//         // d+= '<tr>'+
+//         // '<td>'+ indice +'</td>'+
+//         // '<td>'+Burger[i].nombre+'</td>'+
+//         // '<td>'+Burger[i].tipo+'</td>'+
+//         // // '<td>'+Burger[i].desc+'</td>'+
+//         // '<td>'+Burger[i].ingre+'</td>'+
+//         // '<td>'+Burger[i].precio+'</td>'+
+//         // '</tr>';
+//         // }
+//         // $("#tabla").append(d);
+//         // });
+// $(document).ready(function(){
+//         for (var i = 0; i < Pedido.length; i++) {
+//             indice = i+1;
+//         d+= '<tr>'+
+//         '<td>'+ indice +'</td>'+
+//         '<td>'+Pedido[i].nombre+'</td>'+
+//         '<td>'+Pedido[i].tipo+'</td>'+
+//         '<td>'+Pedido[i].ingre+'</td>'+
+//         '<td>'+Pedido[i].precio+'</td>'+
+//         '</tr>';
+//         }
+//         $("#tabla").append(d);
+// });
+
+            //  window.onload = init;
+            // function init(){
+            //     botonEnvio = document.querySelector('[type="button"]');
+            //     nuevoItem = document.querySelector('[type="text"]');
+            //     listaCompra = document.getElementById("listaCompra");
+                
+            //     botonEnvio.addEventListener("click",anadir);
+            // }
+            // function anadir(e){
+            //     evento = e || window.event;
+            //     if (nuevoItem.value == ""){
+            //         evento.preventDefault();
+            //     }else{
+            //     var lista = document.createElement("li");
+            //     lista.innerHTML = nuevoItem.value;
+            //     lista.addEventListener("dblclick",eliminarLi);
+            //     listaCompra.appendChild(lista);
+            //     nuevoItem.value = "";
+            //     }
+            // }
+            // function eliminarLi(){
+            //     this.parentNode.removeChild(this);
+            // }
+            // https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_object
+    </script>
+</body>
+</html>

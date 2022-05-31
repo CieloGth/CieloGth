@@ -1,0 +1,15 @@
+.pe{
+    text-align: center;
+}
+.modal-body{
+    text-align: justify;
+}
+.btn-outline-danger{
+    background-color: #df1c1c ;
+    color: #fff;
+}
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #ff0019;
+    border-color: #ff0019;
+}
